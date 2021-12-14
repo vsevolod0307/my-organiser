@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Organiser</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="main_org">
+        <ul class="main_menu">
+            <li class="main_link">
+                <a href="#">Часы</a>
+            </li>
+            <li class="main_link">
+                <a href="#">Календарь</a>
+            </li>
+            <li class="main_link">
+                <a href="#">Калькуляторы</a>
+            </li>
+            <li class="main_link">
+                <a href="#">Дневник</a>
+            </li>
+        </ul>
+    </header>
+
+    <div class="main_box stopwatch">
+        <div class="watch min">00</div>:
+        <div class="watch sec">00</div>:
+        <div class="watch msec">00</div>
+        <button class="start">Start</button>
+        <button class="stop">Stop</button>
+        <button class="pause">Pause</button>
+    </div>
+
+    <div class="main_box calendar">
+        <div class="calendar_wrap">
+            <div class="calendar_month"></div>
+            <div class="calendar_month"></div>
+            <div class="calendar_month"></div>
+            <div class="calendar_month"></div>
+            <div class="calendar_month"></div>
+            <div class="calendar_month"></div>
+            <div class="calendar_month"></div>
+            <div class="calendar_month"></div>
+            <div class="calendar_month"></div>
+            <div class="calendar_month"></div>
+            <div class="calendar_month"></div>
+            <div class="calendar_month"></div>
+        </div>
+    </div>
+
+    <div class="main_box calc">
+        <input class="calc_inner"></input>
+        <div class="calc_buttons">
+            <div class="btn">1</div>
+            <div class="btn">2</div>
+            <div class="btn">3</div>
+            <div class="btn">/</div>
+            <div class="btn">4</div>
+            <div class="btn">5</div>
+            <div class="btn">6</div>
+            <div class="btn">*</div>
+            <div class="btn">7</div>
+            <div class="btn">8</div>
+            <div class="btn">9</div>
+            <div class="btn">-</div>
+            <div class="sum">=</div>
+            <div class="btn">0</div>
+            <div class="deleted">С</div>
+            <div class="btn">+</div>
+        </div>
+    </div>
+
+    <div class="main_box diary">
+        <form class="diary_form">
+            <input class="diary_date" placeholder="Введите дату"></input>
+            <div class="diary_mood">
+                <div class="diary_mood_btn">Какое сегодня настроение?
+                    <div class="mood_elem">
+                        <div class="mood_line"></div>
+                        <div class="mood_arrows"></div>
+                    </div>
+                </div>
+                <ul class="mood_list">
+                    <li class="mood_link">
+                        <img src="images/emoji/emoji_1.png" alt="emoji_1">
+                    </li>
+                    <li class="mood_link">
+                        <img src="images/emoji/emoji_2.png" alt="emoji_2">
+                    </li>
+                    <li class="mood_link">
+                        <img src="images/emoji/emoji_3.png" alt="emoji_3">
+                    </li>
+                    <li class="mood_link">
+                        <img src="images/emoji/emoji_4.png" alt="emoji_4">
+                    </li>
+                    <li class="mood_link">
+                        <img src="images/emoji/emoji_5.png" alt="emoji_5">
+                    </li>
+                    <li class="mood_link">
+                        <img src="images/emoji/emoji_6.png" alt="emoji_6">
+                    </li>
+                    <li class="mood_link">
+                        <img src="images/emoji/emoji_7.png" alt="emoji_7">
+                    </li>
+                    <li class="mood_link">
+                        <img src="images/emoji/emoji_8.png" alt="emoji_8">
+                    </li>
+                    <li class="mood_link">
+                        <img src="images/emoji/emoji_9.png" alt="emoji_9">
+                    </li>
+                    <li class="mood_link">
+                        <img src="images/emoji/emoji_10.png" alt="emoji_10">
+                    </li>
+                </ul>
+            </div>
+            <textarea class="diary_descr" placeholder="Опишите ваш день"></textarea>
+            <button type="submit" class="diary_addpost">Добавить пост</button>
+        </form>
+
+        <div class="post_wrap"></div>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
